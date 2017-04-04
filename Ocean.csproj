@@ -89,6 +89,8 @@
     <Compile Include="Assets\BrunetonsOcean\Scripts\WaveSpectrumGPU.cs" />
     <Compile Include="Assets\Floater.cs" />
     <Compile Include="Assets\MyScripts\BoatBob.cs" />
+    <Compile Include="Assets\MyScripts\BoatCollision.cs" />
+    <Compile Include="Assets\MyScripts\MoveTowards.cs" />
     <Compile Include="Assets\MyScripts\WaterCurrent.cs" />
     <Compile Include="Assets\Sardine\Scripts\IwasiMove.cs" />
     <Compile Include="Assets\Sardine\Scripts\IwasiOcean.cs" />
