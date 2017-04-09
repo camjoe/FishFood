@@ -1,0 +1,95 @@
+Base path: E:/Program Files/Unity5/Editor/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-8496
+Cmd: getPlatforms
+Cmd: compileSnippet
+  api=4 type=0 insize=818 outsize=778 kw= pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=818 outsize=510 kw= pd= ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=751 outsize=3776 kw=SHADOWS_DEPTH _ALPHATEST_ON pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=751 outsize=835 kw=SHADOWS_DEPTH _ALPHATEST_ON pd= ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=982 outsize=3979 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _ALPHATEST_ON pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=982 outsize=10796 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _ALPHATEST_ON pd= ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=938 outsize=4101 kw=DIRECTIONAL SHADOWS_OFF _ALPHATEST_ON pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=938 outsize=5718 kw=DIRECTIONAL SHADOWS_OFF _ALPHATEST_ON pd= ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=1215 outsize=1314 kw= pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=1215 outsize=1168 kw= pd= ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=982 outsize=5580 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _NORMALMAP _PARALLAXMAP _METALLICGLOSSMAP pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=982 outsize=12234 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _NORMALMAP _PARALLAXMAP _METALLICGLOSSMAP pd= ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=938 outsize=5174 kw=DIRECTIONAL SHADOWS_OFF _NORMALMAP _PARALLAXMAP _METALLICGLOSSMAP pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=938 outsize=7099 kw=DIRECTIONAL SHADOWS_OFF _NORMALMAP _PARALLAXMAP _METALLICGLOSSMAP pd= ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=7666 outsize=4784 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=7666 outsize=3476 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF pd= ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=5061 outsize=4020 kw=DIRECTIONAL pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=5061 outsize=2907 kw=DIRECTIONAL pd= ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=982 outsize=4703 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _EMISSION _NORMALMAP _METALLICGLOSSMAP pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=982 outsize=11682 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF _EMISSION _NORMALMAP _METALLICGLOSSMAP pd= ok=1
+Cmd: compileCompute
+  api=4 insize=4361 outsize=7993 ok=1
+Cmd: compileCompute
+  api=4 insize=4361 outsize=7993 ok=1
+Cmd: compileCompute
+  api=15 insize=4361 outsize=16305 ok=1
+Cmd: compileCompute
+  api=9 insize=4361 outsize=14953 ok=1
+Cmd: compileCompute
+  api=4 insize=4361 outsize=7993 ok=1
+Cmd: compileCompute
+  api=4 insize=4361 outsize=7993 ok=1
+Cmd: compileCompute
+  api=15 insize=4361 outsize=16305 ok=1
+Cmd: compileCompute
+  api=9 insize=4361 outsize=14953 ok=1
+Cmd: compileCompute
+  api=4 insize=3345 outsize=5477 ok=1
+Cmd: compileCompute
+  api=4 insize=3345 outsize=5477 ok=1
+Cmd: compileCompute
+  api=15 insize=3345 outsize=11561 ok=1
+Cmd: compileCompute
+  api=9 insize=3345 outsize=10621 ok=1
+Cmd: compileCompute
+  api=4 insize=1816 outsize=2837 ok=1
+Cmd: compileCompute
+  api=4 insize=1816 outsize=2837 ok=1
+Cmd: compileCompute
+  api=15 insize=1816 outsize=3917 ok=1
+Cmd: compileCompute
+  api=9 insize=1816 outsize=4025 ok=1
+Cmd: compileCompute
+  api=4 insize=3345 outsize=5477 ok=1
+Cmd: compileCompute
+  api=4 insize=3345 outsize=5477 ok=1
+Cmd: compileCompute
+  api=15 insize=3345 outsize=11561 ok=1
+Cmd: compileCompute
+  api=9 insize=3345 outsize=10621 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=118661 outsize=10520 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF EFFECT_BUMP EFFECT_HUE_VARIATION BILLBOARD_FACE_CAMERA_POS pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=118661 outsize=3151 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF EFFECT_BUMP EFFECT_HUE_VARIATION BILLBOARD_FACE_CAMERA_POS pd= ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=75205 outsize=9894 kw=DIRECTIONAL EFFECT_BUMP EFFECT_HUE_VARIATION BILLBOARD_FACE_CAMERA_POS pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=75205 outsize=2761 kw=DIRECTIONAL EFFECT_BUMP EFFECT_HUE_VARIATION BILLBOARD_FACE_CAMERA_POS pd= ok=1
+Unhandled exception: Readfile from pipe failed. GLE=The pipe has been ended.
+
+
+Quitting shader compiler process

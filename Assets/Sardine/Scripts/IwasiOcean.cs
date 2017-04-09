@@ -10,7 +10,7 @@ public class IwasiOcean : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		Rigidbody iwasirigid = other.GetComponentInParent<Rigidbody> ();
 		other.transform.root.rotation = Quaternion.identity;
-		IwasiMove aniwasimove = other.GetComponentInParent<IwasiMove> ();
+		FishMove aniwasimove = other.GetComponentInParent<FishMove> ();
 		if (aniwasimove.enabled == false){
 			AudioSource iwasiaudio=other.GetComponentInParent<AudioSource>();
 			iwasiaudio.Play();

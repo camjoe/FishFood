@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishFood.Plugins", "FishFood.Plugins.csproj", "{EAFF2A79-B33C-8667-93D1-566F705DDBEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishFood", "FishFood.csproj", "{988ED48D-4E72-0EC4-8ADA-DC3EA0100814}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishFood.Editor", "FishFood.Editor.csproj", "{49681C78-E9F1-4CBC-C62D-9947057690D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAFF2A79-B33C-8667-93D1-566F705DDBEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAFF2A79-B33C-8667-93D1-566F705DDBEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAFF2A79-B33C-8667-93D1-566F705DDBEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAFF2A79-B33C-8667-93D1-566F705DDBEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{988ED48D-4E72-0EC4-8ADA-DC3EA0100814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{988ED48D-4E72-0EC4-8ADA-DC3EA0100814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{988ED48D-4E72-0EC4-8ADA-DC3EA0100814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{988ED48D-4E72-0EC4-8ADA-DC3EA0100814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49681C78-E9F1-4CBC-C62D-9947057690D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49681C78-E9F1-4CBC-C62D-9947057690D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49681C78-E9F1-4CBC-C62D-9947057690D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49681C78-E9F1-4CBC-C62D-9947057690D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
