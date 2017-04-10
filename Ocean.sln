@@ -5,8 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocean.Plugins", "Ocean.Plug
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocean", "Ocean.csproj", "{56564903-B616-E922-1BCA-B1AD6D3E8721}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocean.Editor.Plugins", "Ocean.Editor.Plugins.csproj", "{34FB022C-A148-D584-3312-3A672320EBEF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocean.Editor", "Ocean.Editor.csproj", "{6E7C453A-82E3-9987-E0CB-2CE9EA32C3A2}"
 EndProject
 Global
@@ -23,10 +21,6 @@ Global
 		{56564903-B616-E922-1BCA-B1AD6D3E8721}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56564903-B616-E922-1BCA-B1AD6D3E8721}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56564903-B616-E922-1BCA-B1AD6D3E8721}.Release|Any CPU.Build.0 = Release|Any CPU
-		{34FB022C-A148-D584-3312-3A672320EBEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{34FB022C-A148-D584-3312-3A672320EBEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{34FB022C-A148-D584-3312-3A672320EBEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{34FB022C-A148-D584-3312-3A672320EBEF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6E7C453A-82E3-9987-E0CB-2CE9EA32C3A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6E7C453A-82E3-9987-E0CB-2CE9EA32C3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E7C453A-82E3-9987-E0CB-2CE9EA32C3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
