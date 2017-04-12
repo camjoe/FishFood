@@ -100,10 +100,10 @@ public class FishMovement : MonoBehaviour {
     // Swim randomly between two set locations
     Vector3 GeneralSwim()
     {
-        Debug.Log(Vector3.Distance(transform.position, nextTarget.transform.position) < 1.5);
+        //Debug.Log(Vector3.Distance(transform.position, nextTarget.transform.position) < 1.5);
         if (Vector3.Distance(transform.position, nextTarget.transform.position) < 1.5)
         {
-            Debug.Log("switching target");
+            //Debug.Log("switching target");
 
             nextTarget = prevTarget;
             prevTarget = nextTarget;
