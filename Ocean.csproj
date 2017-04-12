@@ -81,19 +81,20 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\MyScripts\BirdFly.cs" />
-    <Compile Include="Assets\MyScripts\BoatCollision.cs" />
-    <Compile Include="Assets\MyScripts\FishMove.cs" />
-    <Compile Include="Assets\MyScripts\FishMovement.cs" />
-    <Compile Include="Assets\MyScripts\Floater.cs" />
-    <Compile Include="Assets\MyScripts\WaterCurrent.cs" />
-    <Compile Include="Assets\Sardine\Scripts\IwasiOcean.cs" />
-    <Compile Include="Assets\Sardine\Scripts\IwasiRigid.cs" />
-    <Compile Include="Assets\Sardine\Scripts\SardineBoidScript.cs" />
-    <Compile Include="Assets\Sardine\Scripts\SardineBoidsController.cs" />
-    <Compile Include="Assets\Sardine\Scripts\SardineCameraScript.cs" />
-    <Compile Include="Assets\Sardine\Scripts\SardineCharacter.cs" />
-    <Compile Include="Assets\Sardine\Scripts\SardineUserController.cs" />
+    <Compile Include="Assets\DownloadedAssets\Wildlife\Sardine\Scripts\IwasiOcean.cs" />
+    <Compile Include="Assets\DownloadedAssets\Wildlife\Sardine\Scripts\IwasiRigid.cs" />
+    <Compile Include="Assets\DownloadedAssets\Wildlife\Sardine\Scripts\SardineBoidScript.cs" />
+    <Compile Include="Assets\DownloadedAssets\Wildlife\Sardine\Scripts\SardineBoidsController.cs" />
+    <Compile Include="Assets\DownloadedAssets\Wildlife\Sardine\Scripts\SardineCameraScript.cs" />
+    <Compile Include="Assets\DownloadedAssets\Wildlife\Sardine\Scripts\SardineCharacter.cs" />
+    <Compile Include="Assets\DownloadedAssets\Wildlife\Sardine\Scripts\SardineUserController.cs" />
+    <Compile Include="Assets\MyAssets\MyScripts\BirdFly.cs" />
+    <Compile Include="Assets\MyAssets\MyScripts\FishMove.cs" />
+    <Compile Include="Assets\MyAssets\MyScripts\FishMovement.cs" />
+    <Compile Include="Assets\MyAssets\MyScripts\Floater.cs" />
+    <Compile Include="Assets\MyAssets\MyScripts\SharpText.cs" />
+    <Compile Include="Assets\MyAssets\MyScripts\TextAction.cs" />
+    <Compile Include="Assets\MyAssets\MyScripts\WaterCurrent.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
@@ -198,7 +199,11 @@
     <Compile Include="Assets\SteamVR\interactionsystem\core\Scripts\VelocityEstimator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Sardine\ReadMe.txt" />
+    <None Include="Assets\DownloadedAssets\Fonts\Sharp Text Mesh\Documentation.txt" />
+    <None Include="Assets\DownloadedAssets\Fonts\mistis-fonts_sex-and-candy\READ ME!!!!.txt" />
+    <None Include="Assets\DownloadedAssets\Fonts\mistis-fonts_sex-and-candy\Special Symbols.txt" />
+    <None Include="Assets\DownloadedAssets\Wildlife\Sardine\ReadMe.txt" />
+    <None Include="Assets\DownloadedAssets\Wildlife\nnj3de_crucarp\README.txt" />
     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
@@ -291,7 +296,6 @@
     <None Include="Assets\SteamVR\interactionsystem\core\Shaders\SeeThru.shader" />
     <None Include="Assets\SteamVR\interactionsystem\core\Shaders\Silhouette.shader" />
     <None Include="Assets\SteamVR\readme.txt" />
-    <None Include="Assets\nnj3de_crucarp\README.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

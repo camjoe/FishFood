@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 60ec15b56b61d09498a1d80f506a27ce
+timeCreated: 1492030611
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Mf Candy
+  fontNames:
+  - Mf Candy
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
