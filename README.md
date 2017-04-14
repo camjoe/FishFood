@@ -5,7 +5,7 @@ Test project to get accustomed to working with VR headsets.
 
 Created a scene to use SteamVR's TestThrow script (throw an item from hand).
 
-Run VRBeachScene to see latest build. 
+Run VRBeachScene.exe to see latest build. 
 
 # Author: Cameron Joseph (UC San Diego Student)
 # Email: cameronjoseph357@gmail.com
