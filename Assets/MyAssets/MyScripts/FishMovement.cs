@@ -16,6 +16,7 @@ public class FishMovement : MonoBehaviour {
     private bool isEating;
     private Rigidbody rb;
     private int prevJump;
+    private int nextJump;
 
     private void Start()
     {
@@ -29,11 +30,12 @@ public class FishMovement : MonoBehaviour {
     private void FixedUpdate()
     {
         int time = (int)Time.fixedTime;
-        int nextJump = Random.Range(8, 16);
         if (time - prevJump >= nextJump)
         {
             prevJump = time;
             JumpStart();
+            nextJump = Random.Range(8, 16);
+
 
         }
         else if (time - prevJump >= 1 && isJumping)
@@ -64,7 +66,7 @@ public class FishMovement : MonoBehaviour {
         isJumping = false;
 
         //rb.AddForce(transform.up * jumpForce);
-        rb.velocity += new Vector3(0.0f, -jumpForce, 0.0f);
+        rb.velocity += new Vector3(0.0f, -1.0f * jumpForce, 0.0f);
         rb.rotation *= endJumpRotation.rotation;
     }
 
@@ -100,13 +102,13 @@ public class FishMovement : MonoBehaviour {
     // Swim randomly between two set locations
     Vector3 GeneralSwim()
     {
-        //Debug.Log(Vector3.Distance(transform.position, nextTarget.transform.position) < 1.5);
-        if (Vector3.Distance(transform.position, nextTarget.transform.position) < 1.5)
+        //Debug.Log(Vector3.Distance(transform.position, nextTarget.transform.position) < 1.5f);
+        if (Vector3.Distance(transform.position, nextTarget.transform.position) < 1.5f)
         {
-            //Debug.Log("switching target");
-
+            Debug.Log(nextTarget);
+            GameObject temp = nextTarget;
             nextTarget = prevTarget;
-            prevTarget = nextTarget;
+            prevTarget = temp;
         }
 
         targetRelPos = nextTarget.transform.position - transform.position;
@@ -125,7 +127,7 @@ public class FishMovement : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 
 

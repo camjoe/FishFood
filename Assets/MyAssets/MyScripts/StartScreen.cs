@@ -29,8 +29,8 @@ public class StartScreen : MonoBehaviour {
 
     void Awake()
     {
-        //GameObject controller = GameObject.Find("Controller (right)");
-        //trackedObj = controller.GetComponent<SteamVR_TrackedObject>();
+        GameObject controller = GameObject.Find("Controller (right)");
+        trackedObj = controller.GetComponent<SteamVR_TrackedObject>();
         GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
         playerView = camera.transform;
     }
@@ -41,20 +41,20 @@ public class StartScreen : MonoBehaviour {
      */
     void FixedUpdate()
     {
-        /*if (!trackedObj)
+        if (!trackedObj)
         {
             return;
         }
 
         SteamVR_Controller.Device device = SteamVR_Controller.Input((int)trackedObj.index);
-        */
+        
 
 
         if (trigger.textActionTrigger == TextTrigger.triggerType.buttonPress)
         {
             // If trigger button is pressed, switch text on screen
-            //if (device.GetTouchDown(SteamVR_Controller.ButtonMask.Trigger))
-            if (Input.GetMouseButtonDown(0))
+            if (device.GetTouchDown(SteamVR_Controller.ButtonMask.Trigger))
+            //if (Input.GetMouseButtonDown(0))
             {
                 SwitchText();
             }
