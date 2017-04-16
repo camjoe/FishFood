@@ -7,34 +7,32 @@ using UnityEngine;
  */
 public class StartScreen : MonoBehaviour {
     public GameObject[] sharpTexts;
-    private GameObject currentText;
-    private GameObject currClone;
+
+    private GameObject currText;
     private TextTrigger trigger;
     private int textIdx;
 
     SteamVR_TrackedObject trackedObj;
     SteamVR_TestTrackedCamera trackedCamera;
-    FixedJoint joint;
+    //FixedJoint joint;
+    Transform playerView;
 
     /**
      * Load first text mesh onto screen at start
      */
     private void Start()
     {
-        textIdx = 0;
+        textIdx = -1;
 
-        if (sharpTexts.Length >= 1)
-        {
-            currentText = sharpTexts[0];
-            trigger = currentText.GetComponent<TextTrigger>();
-            currentText = GameObject.Instantiate(currentText);
-        }
+        SwitchText();
     }
 
     void Awake()
     {
-        GameObject controller = GameObject.Find("Controller (right)");
-        trackedObj = controller.GetComponent<SteamVR_TrackedObject>();
+        //GameObject controller = GameObject.Find("Controller (right)");
+        //trackedObj = controller.GetComponent<SteamVR_TrackedObject>();
+        GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
+        playerView = camera.transform;
     }
 
     /**
@@ -43,62 +41,70 @@ public class StartScreen : MonoBehaviour {
      */
     void FixedUpdate()
     {
-
-        if (!trackedObj)
+        /*if (!trackedObj)
         {
             return;
         }
 
         SteamVR_Controller.Device device = SteamVR_Controller.Input((int)trackedObj.index);
+        */
 
-        if (trigger)
+
+        if (trigger.textActionTrigger == TextTrigger.triggerType.buttonPress)
         {
-            if (trigger.textActionTrigger == TextTrigger.triggerType.buttonPress)
+            // If trigger button is pressed, switch text on screen
+            //if (device.GetTouchDown(SteamVR_Controller.ButtonMask.Trigger))
+            if (Input.GetMouseButtonDown(0))
             {
-                if (joint == null && device.GetTouchDown(SteamVR_Controller.ButtonMask.Trigger))
-                {
-                    GameObject.Destroy(currentText);
-                    Debug.Log(currentText.name);
-                    trigger = GetNextTextTrigger();
-                    if (trigger)
-                    {
-                        currentText = GameObject.Instantiate(currentText);
-                    }
-                    Debug.Log(currentText.name);
-                }
-            }
-            else if (trigger.textActionTrigger == TextTrigger.triggerType.cameraView)
-            {
-                // If looking near direction, switch text on screen
-
-            }
-            else if (trigger.textActionTrigger == TextTrigger.triggerType.collision)
-            {
-                // If text if collided with, then switch text on screen
-
-            }
-            else
-            {
-                // Do not believe there will a text with no trigger
+                SwitchText();
             }
         }
-        
-      
+        else if (trigger.textActionTrigger == TextTrigger.triggerType.cameraView)
+        {
+
+            // If looking near direction, switch text on screen
+            if (Vector3.Dot(playerView.forward, (trigger.lookDirection.position - playerView.position).normalized) > 0.83f)
+            {
+                SwitchText();
+            }
+
+        }
+        else if (trigger.textActionTrigger == TextTrigger.triggerType.collision)
+        {
+            Debug.Log(trigger.textActionTrigger);
+            Debug.Log(trigger.hasCollided);
+
+            // If text if collided with, then switch text on screen
+            if (trigger.hasCollided)
+            {
+                SwitchText();
+            }
+
+        }
+        else
+        {
+            // Do not believe there will be a text with no trigger
+        }          
     }
 
     /**
-     * Get next text mesh to be loaded and return its trigger to be start action (destruction)
+     * Destroy previous text and get next text mesh to be loaded.
+     * Destroy this script if no more text meshes to be loaded.
      */ 
-    TextTrigger GetNextTextTrigger()
+    private void SwitchText()
     {
         if (textIdx + 1 >= sharpTexts.Length)
         {
-            return null;
+            Destroy(currText);
+            Destroy(this);
+            return;
         }
 
-        currentText = sharpTexts[textIdx + 1];
+        Destroy(currText);
+        currText = GameObject.Instantiate(sharpTexts[textIdx + 1]);
         textIdx += 1;
-
-        return currentText.GetComponent<TextTrigger>();
+        trigger = currText.GetComponent<TextTrigger>();
     }
+
+
 }
