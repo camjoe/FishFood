@@ -105,7 +105,6 @@ public class FishMovement : MonoBehaviour {
         //Debug.Log(Vector3.Distance(transform.position, nextTarget.transform.position) < 1.5f);
         if (Vector3.Distance(transform.position, nextTarget.transform.position) < 1.5f)
         {
-            Debug.Log(nextTarget);
             GameObject temp = nextTarget;
             nextTarget = prevTarget;
             prevTarget = temp;
@@ -127,7 +126,7 @@ public class FishMovement : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
 
 

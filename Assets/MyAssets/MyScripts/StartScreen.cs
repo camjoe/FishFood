@@ -14,6 +14,7 @@ public class StartScreen : MonoBehaviour {
 
     SteamVR_TrackedObject trackedObj;
     SteamVR_TestTrackedCamera trackedCamera;
+    public GameObject controller;
     //FixedJoint joint;
     Transform playerView;
 
@@ -29,7 +30,9 @@ public class StartScreen : MonoBehaviour {
 
     void Awake()
     {
-        GameObject controller = GameObject.Find("Controller (right)");
+        //GameObject controller = GameObject.FindGameObjectWithTag("Player");
+        Debug.Log("controller" + controller.name);
+
         trackedObj = controller.GetComponent<SteamVR_TrackedObject>();
         GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
         playerView = camera.transform;
@@ -41,6 +44,7 @@ public class StartScreen : MonoBehaviour {
      */
     void FixedUpdate()
     {
+        Debug.Log(trackedObj);
         if (!trackedObj)
         {
             return;
